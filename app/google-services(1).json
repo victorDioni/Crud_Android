@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "245660319792",
+    "project_id": "crud-44536",
+    "storage_bucket": "crud-44536.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245660319792:android:4a0acc92714b1faf67adf5",
+        "android_client_info": {
+          "package_name": "dionizio.victor.crud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245660319792-6i7tlt6mp0n8b71j6o1mp2jvvr4nnnco.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dionizio.victor.crud",
+            "certificate_hash": "ed772ac4e8fbd9c34ea70cabb57a9aba5c9ba625"
+          }
+        },
+        {
+          "client_id": "245660319792-aierv4hki690b8shljc48cgo262ihfc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzVONPpt4c6B5Be281kChxVk6iqlL0o1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245660319792-aierv4hki690b8shljc48cgo262ihfc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
