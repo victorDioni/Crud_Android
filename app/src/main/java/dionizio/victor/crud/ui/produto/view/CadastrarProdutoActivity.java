@@ -1,4 +1,4 @@
-package dionizio.victor.crud.ui.login.view;
+package dionizio.victor.crud.ui.produto.view;
 
 import android.os.Bundle;
 

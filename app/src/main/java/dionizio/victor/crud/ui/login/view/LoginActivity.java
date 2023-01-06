@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import dionizio.victor.crud.R;
+import dionizio.victor.crud.ui.produto.view.CadastrarProdutoActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -18,14 +19,14 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        btnLogin = findViewById(R.id.btnEntrarLogin);
-//
-//        btnLogin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                cadastrarProduto();
-//            }
-//        });
+        btnLogin = findViewById(R.id.btnEntrarLogin);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                cadastrarProduto();
+            }
+        });
     }
 
     public void cadastrarProduto(){
