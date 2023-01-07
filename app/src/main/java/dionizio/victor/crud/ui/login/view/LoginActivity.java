@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import dionizio.victor.crud.R;
+import dionizio.victor.crud.ui.main.view.MainActivity;
 import dionizio.victor.crud.ui.produto.view.CadastrarProdutoActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -24,12 +25,12 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cadastrarProduto();
+                chamarTelaPrincipal();
             }
         });
     }
 
-    public void cadastrarProduto(){
-        startActivity(new Intent(this, CadastrarProdutoActivity.class));
+    public void chamarTelaPrincipal(){
+        startActivity(new Intent(this, MainActivity.class));
     }
 }

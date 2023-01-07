@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">CRUD</string>
+
+    <string-array name="planets_array">
+        <item>Id</item>
+        <item>Nome</item>
+        <item>Categoria</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
 </resources>
