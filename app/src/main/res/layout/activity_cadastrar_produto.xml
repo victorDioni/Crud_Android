@@ -7,12 +7,12 @@
     android:layout_column="10">
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/textInputLayoutDataValidade"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="30dp"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btnSalvar"
@@ -50,13 +50,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutId"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:textColorHint="@color/black"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayoutNome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,19 +66,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:hint="Id" />
+            android:hint="Id"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/textInputLayoutNome"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:textColorHint="@color/black"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
         app:helperText="Obrigatório"
         app:helperTextTextColor="@android:color/holo_red_light"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayoutCategoria"
@@ -87,44 +89,48 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutId">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textInputEditTextNome"
             android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:hint="Nome" />
+            android:hint="Nome"
+            android:maxLength="21"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutCategoria"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:textColorHint="@color/black"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayoutValor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutNome">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textInputEditTextCategoria"
             android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:hint="Categoria" />
+            android:hint="Categoria"
+            android:maxLength="21"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/textInputLayoutQuantidade"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:textColorHint="@color/black"
         app:helperText="Obrigatório"
@@ -135,21 +141,21 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutValor">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextQuantidade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textInputEditTextQuantidade"
             android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:hint="Quantidade" />
+            android:hint="Quantidade"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/textInputLayoutValor"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:textColorHint="@color/black"
         app:helperText="Obrigatório"
@@ -160,12 +166,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCategoria">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textInputEditTextValor"
             android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:hint="Valor" />
+            android:hint="Valor"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
