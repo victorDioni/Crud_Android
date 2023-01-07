@@ -27,6 +27,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:hint="Data de validade"
+            android:inputType="date"
+            android:maxLength="8"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,6 +70,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:hint="Id"
+            android:inputType="number"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,6 +99,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:hint="Nome"
+            android:inputType="text"
             android:maxLength="21"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -123,6 +127,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:hint="Categoria"
+            android:inputType="text"
             android:maxLength="21"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -150,6 +155,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:hint="Quantidade"
+            android:inputType="number"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -175,6 +181,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
+            android:inputType="numberDecimal"
             android:hint="Valor"
             android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
